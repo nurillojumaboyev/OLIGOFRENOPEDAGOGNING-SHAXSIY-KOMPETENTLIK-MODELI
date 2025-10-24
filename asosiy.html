@@ -4,7 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asosiy qism – Oligofrenopedagogning shaxsiy kompetentlik modeli</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav {
+      width: 100%;
+      background: linear-gradient(90deg, #3b82f6, #2563eb);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      font-weight: 600;
+      border-radius: 12px;
+      transition: 0.3s;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: rgba(255,255,255,0.1);
+    }
+
+    nav a:hover {
+      background-color: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      margin: 60px auto;
+      text-align: center;
+    }
+
+    .container h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .container p {
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .chapters {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .chapters li {
+      width: 100%;
+    }
+
+    .chapters a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 28px 20px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .chapters a:hover {
+      background-color: #3b82f6;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    /* Bob belgilari */
+    .chapters a::before {
+      content: "📘"; /* default belgi */
+      font-size: 32px;
+    }
+
+    /* Har bir bobga o'ziga xos belgi */
+    .bob1::before { content: "📖"; }       /* Nazariya */
+    .bob2::before { content: "🧩"; }       /* Model */
+    .bob3::before { content: "🎓"; }       /* Kasbiy */
+    .bob4::before { content: "💬"; }       /* Kommunikativ */
+    .bob5::before { content: "⚖️"; }       /* Axloqiy */
+    .bob6::before { content: "🪞"; }       /* Refleksiv */
+    .bob7::before { content: "💡"; }       /* Ijodiy va innovatsion */
+    .bob8::before { content: "🌐"; }       /* Ijtimoiy */
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .chapters {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -19,14 +141,14 @@
     <p>Bobni tanlang:</p>
 
     <ul class="chapters">
-      <li><a href="bob1.html">1-bob. Oligofrenopedagogik faoliyatning nazariy asoslari</a></li>
-      <li><a href="bob2.html">2-bob. Oligofrenopedagog shaxsining kompetentlik modeli</a></li>
-      <li><a href="bob3.html">3-bob. Kasbiy-pedagogik kompetentlik</a></li>
-      <li><a href="bob4.html">4-bob. Kommunikativ kompetentlik</a></li>
-      <li><a href="bob5.html">5-bob. Shaxsiy va axloqiy kompetentlik</a></li>
-      <li><a href="bob6.html">6-bob. Refleksiv kompetentlik</a></li>
-      <li><a href="bob7.html">7-bob. Ijodiy va innovatsion kompetentlik</a></li>
-      <li><a href="bob8.html">8-bob. Ijtimoiy kompetentlik</a></li>
+      <li><a href="bob1.html" class="bob1">1-bob. Oligofrenopedagogik faoliyatning nazariy asoslari</a></li>
+      <li><a href="bob2.html" class="bob2">2-bob. Oligofrenopedagog shaxsining kompetentlik modeli</a></li>
+      <li><a href="bob3.html" class="bob3">3-bob. Kasbiy-pedagogik kompetentlik</a></li>
+      <li><a href="bob4.html" class="bob4">4-bob. Kommunikativ kompetentlik</a></li>
+      <li><a href="bob5.html" class="bob5">5-bob. Shaxsiy va axloqiy kompetentlik</a></li>
+      <li><a href="bob6.html" class="bob6">6-bob. Refleksiv kompetentlik</a></li>
+      <li><a href="bob7.html" class="bob7">7-bob. Ijodiy va innovatsion kompetentlik</a></li>
+      <li><a href="bob8.html" class="bob8">8-bob. Ijtimoiy kompetentlik</a></li>
     </ul>
   </div>
 
