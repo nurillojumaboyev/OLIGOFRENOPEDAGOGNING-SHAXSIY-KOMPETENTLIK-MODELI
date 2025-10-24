@@ -25,14 +25,6 @@
       justify-content: center;
       gap: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: 0.5s;
-      animation: navGradient 8s infinite alternate;
-    }
-
-    @keyframes navGradient {
-      0% { background: linear-gradient(90deg, #3b82f6, #2563eb); }
-      50% { background: linear-gradient(90deg, #2563eb, #3b82f6); }
-      100% { background: linear-gradient(90deg, #3b82f6, #10b981); }
     }
 
     nav a {
@@ -55,7 +47,7 @@
     }
 
     .container {
-      max-width: 500px;
+      max-width: 500px; /* bir ustun uchun torroq container */
       width: 100%;
       margin: 60px auto;
       text-align: center;
@@ -76,7 +68,7 @@
       list-style: none;
       padding: 0;
       display: flex;
-      flex-direction: column;
+      flex-direction: column; /* vertikal ustun */
       gap: 20px;
       justify-items: center;
       align-items: center;
@@ -91,32 +83,33 @@
       align-items: center;
       justify-content: flex-start;
       gap: 15px;
-      padding: 22px 25px;
+      padding: 20px 25px;
       color: white;
       text-decoration: none;
-      border-radius: 18px;
+      border-radius: 16px;
       font-size: 20px;
       font-weight: 600;
       text-align: left;
-      transition: 0.5s;
+      transition: 0.3s;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      background: linear-gradient(135deg, #2563eb, #3b82f6);
-      background-size: 400% 400%;
-      animation: gradientMove 8s ease infinite;
     }
 
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+    /* Rang-barang tugmalar: har bir bob o'z rangiga ega */
+    .bob1 { background-color: #ff6b6b; }      /* qizil - diqqatni jalb qiladi */
+    .bob2 { background-color: #f59e0b; }      /* to‘q sariq - ijobiy energiya */
+    .bob3 { background-color: #10b981; }      /* yashil - ishonch va rivojlanish */
+    .bob4 { background-color: #3b82f6; }      /* ko‘k - bilim va fokus */
+    .bob5 { background-color: #8b5cf6; }      /* binafsha - ijodiy fikrlash */
+    .bob6 { background-color: #14b8a6; }      /* turkuaz - refleksiya va fikr */
+    .bob7 { background-color: #f472b6; }      /* pushti - motivatsiya va yangilik */
+    .bob8 { background-color: #facc15; color: #1f2937; } /* sariq - ijtimoiy faollik */
 
-    /* Emoji belgilar */
     .chapters a::before {
-      content: "📘";
+      content: "📘"; /* default belgi */
       font-size: 32px;
     }
 
+    /* Har bir bobga o'ziga xos emoji */
     .bob1::before { content: "📖"; }
     .bob2::before { content: "🧩"; }
     .bob3::before { content: "🎓"; }
@@ -126,19 +119,9 @@
     .bob7::before { content: "💡"; }
     .bob8::before { content: "🌐"; }
 
-    /* Har bir bobga alohida rang gradient */
-    .bob1 { background: linear-gradient(135deg, #ff6b6b, #ff8a80); }
-    .bob2 { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
-    .bob3 { background: linear-gradient(135deg, #10b981, #34d399); }
-    .bob4 { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
-    .bob5 { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
-    .bob6 { background: linear-gradient(135deg, #14b8a6, #2dd4bf); }
-    .bob7 { background: linear-gradient(135deg, #f472b6, #f9a8d4); }
-    .bob8 { background: linear-gradient(135deg, #facc15, #fde68a); color: #1f2937; }
-
     .chapters a:hover {
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
     }
 
     @media (max-width: 600px) {
